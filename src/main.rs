@@ -15,7 +15,6 @@ struct Args {
 }
 
 fn main() {
-
     let args = Args::parse();
     let file_type_len = args.file_type.len();
     let find_attempt = read_dir(&args.search_path).unwrap().filter_map(|entry| {
